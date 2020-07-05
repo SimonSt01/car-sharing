@@ -38,11 +38,12 @@ h2 {
   height: 40px;
   margin: 50px auto;
   text-align: center;
+  text-transform: uppercase;
 }
 h2::before {
   content: "";
   position: absolute;
-  left: -50%;
+  left: -30%;
   top: 50%;
   height: 3px;
   background-color: var(--alert-color);
@@ -54,7 +55,7 @@ h2::before {
 h2::after {
   content: "";
   position: absolute;
-  left: 150%;
+  left: 130%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--alert-color);
@@ -210,6 +211,10 @@ h2::after {
   background-color: var(--alert-color);
   box-shadow: 0px 3px 6px #ff00004d;
 }
+
+.blog__header {
+  padding: 0 7px;
+}
 .blog__article {
   text-align: left;
 }
@@ -236,4 +241,34 @@ h2::after {
 }
 .article__content {
   width: 70%;
+}
+.service {
+  background-color: #28272c;
+  color: #fff;
+}
+
+.service__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  margin: 0 20px;
+  text-align: center;
+  height: 400px;
+}
+.service__name {
+  font-size: 1.9rem;
+  font-weight: var(--regular-font);
+}
+.service__text {
+  color: #b2b2b2;
+  font-size: 1.4rem;
+}
+.service__photo {
+  width: 80%;
+}
+.service__btn {
+  padding: 10px 20px;
+  box-shadow: 0px 3px 6px #ff00004d;
 }
