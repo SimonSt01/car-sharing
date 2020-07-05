@@ -4,14 +4,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+:root {
+  --alert-color: #ff0000;
+  --black-color: #00000066;
+  --bold-font: 700;
+  --normal-font: 400;
+  --large-font: 3.6rem;
+  --regular-font: 1.6rem;
+}
 .container {
-  width: 1088px;
+  max-width: 1088px;
+  width: 100%;
 }
 .menu {
-  background-color: #00000066;
+  background-color: var(--black-color);
   position: fixed;
   width: 100%;
   display: flex;
@@ -35,15 +47,28 @@ body {
 .menu__logo span {
   color: #ff0000;
 }
-.menu__nav {
+.menu__box {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 16px;
+  width: 80%;
 }
 .menu__item {
-  margin: 5px 25px;
+  transition: 0.4s;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: var(--bold-font);
+  font-size: var(--normal-font);
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 100% 30px;
 }
+.menu__item:hover {
+  background-color: #ffffff48;
+}
+
 .main__section {
   background-image: url(../images/Image.png);
   background-position: center;
