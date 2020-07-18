@@ -1,2 +1,100 @@
 .header {
+  background-color: $contrast-color;
+  height: 90px;
+  border-bottom: 2px solid #ffffff33;
+  padding: 0 10px;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  &__container {
+    grid-template-columns: 5fr 1fr;
+    justify-self: center;
+    align-items: center;
+  }
+  &__logo {
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    height: 100%;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 90px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-100%, 100%);
+    overflow-y: hidden;
+    &.active {
+      transform: translate(0%, 100%);
+      background-color: $contrast-color;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: $hover-transition;
+    padding: 0 20px;
+    &:hover {
+      background-color: lighten($contrast-color, 90%);
+    }
+  }
+  &__link {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &__hamburger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+
+    span {
+      height: 3px;
+      width: 35px;
+      background-color: #fff;
+      border-radius: 15px;
+      transition: 0.45s ease-in-out;
+    }
+    &.active {
+      transform: translateY(-50%) rotate(360deg);
+    }
+    &.active span {
+      position: absolute;
+      transition: 0.3;
+      background-color: $primary-color;
+    }
+    &.active span:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    &.active span:nth-child(2) {
+      opacity: 0;
+    }
+    &.active span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+  @include mq(desktop) {
+    &__menu {
+      flex-direction: row;
+    }
+  }
 }

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: $primary-font;
 }
 button {
   cursor: pointer;
@@ -55,35 +55,18 @@ h2::after {
   border-radius: 8px;
   height: 3px;
 }
-
-:root {
-  --alert-color: #ff0000;
-  --black-color: #00000066;
-  --grey-color: #6a6a6a;
-  --extra-bold-font: 900;
-  --bold-font: 700;
-  --normal-font: 400;
-  --large-font: 3.6rem;
-  --regular-font: 1.6rem;
-  --hover-transition: 0.4s;
-  --open-sans-font: "Open Sans", "Helvetica Neue", sans-serif;
-}
 .container {
   max-width: 1088px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  color: white;
+  color: #fff;
 
   &__icon {
     margin-right: 8px;
@@ -92,4 +75,11 @@ h2::after {
     color: #ff0000;
     margin-right: 10px;
   }
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  transition: $hover-transition;
+  text-transform: uppercase;
 }

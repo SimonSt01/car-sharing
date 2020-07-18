@@ -1,0 +1,18 @@
+// colors
+$primary-color: #ff0000;
+$contrast-color: #00000066;
+$secondary-color: #6a6a6a;
+
+// fonts
+$primary-font: "Nunito Sans", sans-serif;
+$secondary-font: "Open Sans", "Helvetica Neue", sans-serif;
+
+// other
+$hover-transition: 0.4s;
+
+// media brakpionts
+
+$breakpoints: (
+  tablet: "min-width:720px",
+  desktop: "min-width:1024px",
+);
