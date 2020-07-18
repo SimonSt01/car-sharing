@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: var(--regular-font);
+  border-radius: 40px;
+  border: 0;
+  font-weight: var(--bold-font);
+  transition: var(--hover-transition);
+  color: #fff;
+  background-color: var(--alert-color);
+}
+
+section {
+  padding: 100px 0;
+}
+
+h2 {
+  font-size: var(--large-font);
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+  margin: 50px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: -30%;
+  top: 50%;
+  height: 3px;
+  background-color: var(--alert-color);
+  width: 50px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 6px #ff00004d;
+  border-radius: 8px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 130%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--alert-color);
+  width: 50px;
+  box-shadow: 0px 1px 6px #ff00004d;
+  border-radius: 8px;
+  height: 3px;
+}
+
+:root {
+  --alert-color: #ff0000;
+  --black-color: #00000066;
+  --grey-color: #6a6a6a;
+  --extra-bold-font: 900;
+  --bold-font: 700;
+  --normal-font: 400;
+  --large-font: 3.6rem;
+  --regular-font: 1.6rem;
+  --hover-transition: 0.4s;
+  --open-sans-font: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 1088px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.logo__icon {
+  margin-right: 8px;
+}
+.logo__name {
+  color: #ff0000;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=main.css.map */
