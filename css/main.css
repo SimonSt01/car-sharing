@@ -196,7 +196,7 @@ a {
 }
 
 section {
-  padding: 100px 10px;
+  padding: 100px 15px;
 }
 
 h2 {
@@ -239,6 +239,10 @@ button {
 .secondary-btn {
   color: #ff0000;
   background-color: #fff;
+}
+
+p {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .header {
@@ -424,7 +428,7 @@ button {
 }
 .blog__img {
   width: 100%;
-  max-width: 720px;
+  max-width: 520px;
 }
 .blog__name {
   text-align: left;
@@ -436,5 +440,23 @@ button {
 .blog__btn {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.service {
+  background-color: #28272c;
+  color: #fff;
+}
+.service__container {
+  grid-template-rows: repeat(4, 30rem);
+  align-items: center;
+}
+.service__article {
+  text-align: center;
+}
+.service__article * {
+  margin: 0.7rem 0;
+}
+.service__text {
+  color: #b2b2b2;
 }
 /*# sourceMappingURL=main.css.map */
