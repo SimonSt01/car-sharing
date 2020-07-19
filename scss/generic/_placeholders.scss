@@ -1,0 +1,16 @@
+%button-style {
+  font-weight: 700;
+  transition: $hover-transition;
+  padding: 20px 50px;
+  width: fit-content;
+  font-size: 1rem;
+  border-radius: $primary-radius;
+}
+
+%headers-lines {
+  content: "";
+  position: absolute;
+  background-color: $primary-color;
+  width: 30%;
+  height: 3px;
+}

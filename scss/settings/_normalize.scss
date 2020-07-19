@@ -6,63 +6,6 @@
 body {
   font-family: $primary-font;
 }
-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-size: var(--regular-font);
-  border-radius: 40px;
-  border: 0;
-  font-weight: var(--bold-font);
-  transition: var(--hover-transition);
-  color: #fff;
-  background-color: var(--alert-color);
-}
-section {
-  padding: 100px 0;
-}
-
-h2 {
-  font-size: var(--large-font);
-  position: relative;
-  width: fit-content;
-  height: 40px;
-  margin: 50px auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-h2::before {
-  content: "";
-  position: absolute;
-  left: -30%;
-  top: 50%;
-  height: 3px;
-  background-color: var(--alert-color);
-  width: 50px;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 1px 6px #ff00004d;
-  border-radius: 8px;
-}
-h2::after {
-  content: "";
-  position: absolute;
-  left: 130%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--alert-color);
-  width: 50px;
-  box-shadow: 0px 1px 6px #ff00004d;
-  border-radius: 8px;
-  height: 3px;
-}
-.container {
-  max-width: 1088px;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
-  display: grid;
-}
-
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
@@ -82,4 +25,57 @@ a {
   color: white;
   transition: $hover-transition;
   text-transform: uppercase;
+}
+
+.container {
+  max-width: 1088px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+}
+section {
+  padding: 100px 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 70px;
+  &::before {
+    @extend %headers-lines;
+    left: 30%;
+    top: -15px;
+  }
+  &::after {
+    @extend %headers-lines;
+    right: 30%;
+    bottom: -15px;
+  }
+}
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.primary-btn {
+  @extend %button-style;
+  color: #fff;
+  background-color: $primary-color;
+}
+.secondary-btn {
+  @extend %button-style;
+  color: $primary-color;
+  background-color: #fff;
 }
