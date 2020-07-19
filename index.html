@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car sharing</title>
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -139,6 +140,37 @@
     </section>
     <section class="contact">
       <h2 class="contact__header">Contact</h2>
+      <div class="container contact__container">
+        <img src="./assets/Form Photo.png" alt="" class="contact__img" />
+        <form action="#" class="contact__form">
+          <label for=""
+            ><input type="text" placeholder="Type your name"
+          /></label>
+          <label for=""
+            ><input type="email" placeholder="Type your e-mail"
+          /></label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Type your message"
+          ></textarea>
+          <div class="contact__agreement">
+            <input type="checkbox" class="contact__checkbox" id="checkbox" />
+            <label for="checkbox"></label>
+            <p class="contact__agreement-text">
+              I hereby give consent for my personal data included in my
+              application to be processed for the purposes of the recruitment
+              process under the European Parliament’s and Council of the
+              European Union Regulation on the Protection of Natural Persons as
+              of 27 April 2016, with regard to the processing of personal data
+              and on the free movement of such data, and repealing Directive
+              95/46/EC (Data Protection Directive)
+            </p>
+          </div>
+        </form>
+      </div>
     </section>
     <script src="./js/main.js"></script>
   </body>
